@@ -8,6 +8,7 @@
 <body>
 <x-dc>
 <helmet>
+<meta name="robots" content="noindex,nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <script src="./image-slot.js"></script>
@@ -57,10 +58,11 @@
   details[open] .faq-chev { transform:rotate(45deg); }
   .faq-chev { transition:transform .3s ease; display:inline-block; }
 </style>
-  <meta name="robots" content="noindex,nofollow">
 </helmet>
 
 <div ref="{{ rootRef }}" data-ph-hide="{{ phHide }}" data-anim="{{ animOn }}" style="background:#F7F8FA; color:#152238; font-family:'Manrope',sans-serif; -webkit-font-smoothing:antialiased;">
+
+<div style="position:sticky; top:0; z-index:70; background:#152238; color:#fff; text-align:center; padding:9px 16px; font-family:system-ui,sans-serif; font-size:13.5px; font-weight:600;">Draft preview built for Electricians Worcester &mdash; goes live on your own domain within 24h of approval.</div>
 
   <!-- ================= NAV ================= -->
   <div data-screen-label="Nav" data-navbar style="position:sticky; top:0; z-index:50; background:rgba(255,255,255,.92); backdrop-filter:blur(12px); border-bottom:1px solid #E4E8EF;">
@@ -77,20 +79,19 @@
         <a href="#faq" style="text-decoration:none; color:#4A5A72; padding-bottom:3px; background-image:linear-gradient(#1B4A8A,#1B4A8A); background-size:0% 2px; background-repeat:no-repeat; background-position:0 100%; transition:background-size .3s ease, color .3s ease;" style-hover="background-size:100% 2px; color:#1B4A8A;">FAQ</a>
       </div>
       <div style="display:flex; align-items:center; gap:18px;">
-        <a href="tel:+447837137534" style="font-weight:800; font-size:15px; color:#1B4A8A; text-decoration:none;">07837 137534</a>
+        <a href="tel:07854652753" style="font-weight:800; font-size:15px; color:#1B4A8A; text-decoration:none;">07854 652753</a>
         <a data-nav-cta href="#contact" style="background:#F5A623; color:#152238; font-weight:700; padding:12px 22px; border-radius:10px; font-size:15px; text-decoration:none; display:inline-block; white-space:nowrap;" style-hover="background:#E79A15;">Book an electrician</a>
       </div>
     </div>
   </div>
 
-
   <!-- ================= HERO ================= -->
   <div data-screen-label="Hero" style="position:relative; isolation:isolate; max-width:1240px; margin:0 auto; display:flex; flex-direction:column; align-items:center; text-align:center; padding:clamp(64px,9vw,96px) 24px clamp(72px,10vw,104px);">
     <div style="position:absolute; z-index:-1; left:8%; top:6%; width:440px; height:440px; max-width:70vw; border-radius:50%; background:radial-gradient(circle, rgba(27,74,138,.09), transparent 65%); animation:blobDrift 16s ease-in-out infinite alternate; pointer-events:none;"></div>
     <div style="position:absolute; z-index:-1; right:6%; bottom:0; width:380px; height:380px; max-width:60vw; border-radius:50%; background:radial-gradient(circle, rgba(245,166,35,.10), transparent 65%); animation:blobDrift 13s ease-in-out 1.5s infinite alternate-reverse; pointer-events:none;"></div>
-    <div style="display:inline-flex; align-items:center; gap:8px; background:#E8F0FB; color:#1B4A8A; font-weight:700; font-size:13px; padding:7px 14px; border-radius:999px; margin-bottom:26px; animation:heroPop .7s ease both;"><span>4.9 rated · 300+ local reviews</span> · <span>Worcester</span></div>
-    <h1 style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(38px,7vw,64px); line-height:1.08; letter-spacing:-.02em; margin:0 0 24px; max-width:880px; animation:heroPop .7s ease .08s both;"><span>Trusted electricians for your home &amp; business</span></h1>
-    <p style="font-size:20px; line-height:1.6; color:#4A5A72; margin:0 0 36px; max-width:620px; animation:heroPop .7s ease .16s both;"><span>Upfront pricing, tidy work and every job guaranteed. Local electricians serving Worcester and Worcestershire.</span></p>
+    <div style="display:inline-flex; align-items:center; gap:8px; background:#E8F0FB; color:#1B4A8A; font-weight:700; font-size:13px; padding:7px 14px; border-radius:999px; margin-bottom:26px; animation:heroPop .7s ease both;"><span>4.8 rated &middot; 60+ local reviews</span> · <span>Worcester</span></div>
+    <h1 style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(38px,7vw,64px); line-height:1.08; letter-spacing:-.02em; margin:0 0 24px; max-width:880px; animation:heroPop .7s ease .08s both;"><span>Trusted electricians for Worcester homes &amp; businesses</span></h1>
+    <p style="font-size:20px; line-height:1.6; color:#4A5A72; margin:0 0 36px; max-width:620px; animation:heroPop .7s ease .16s both;"><span>Upfront pricing, tidy work, and every job guaranteed &mdash; your local Worcester electricians.</span></p>
     <div style="display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:center; animation:heroPop .7s ease .24s both;">
       <a href="#contact" style="background:#1B4A8A; color:#fff; font-weight:700; font-size:17px; padding:16px 30px; border-radius:12px; text-decoration:none; display:inline-block; box-shadow:0 8px 20px rgba(27,74,138,.25); transition:transform .25s ease, background .25s ease;" style-hover="background:#143A6E; transform:translateY(-2px);">Get a free quote</a>
       <a href="#services" style="border:2px solid #D5DCE7; color:#152238; font-weight:700; font-size:17px; padding:14px 28px; border-radius:12px; text-decoration:none; display:inline-block; transition:border-color .25s ease;" style-hover="border-color:#1B4A8A;">See services</a>
@@ -119,10 +120,6 @@
           <span style="font-family:'Sora',sans-serif; font-weight:800; font-size:14px;">Part P</span>
           <span style="font-size:10.5px; font-weight:700; color:#6B7A92; letter-spacing:.05em; text-transform:uppercase;">Building Regs Certified</span>
         </div>
-        <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px; min-width:150px; height:56px; border-radius:8px; background:#F0F3F8; padding:0 18px; transition:transform .3s ease, box-shadow .3s ease;" style-hover="transform:translateY(-3px); box-shadow:0 8px 18px rgba(21,34,56,.08);">
-          <span style="font-family:'Sora',sans-serif; font-weight:800; font-size:14px;">ECA</span>
-          <span style="font-size:10.5px; font-weight:700; color:#6B7A92; letter-spacing:.05em; text-transform:uppercase;">Member</span>
-        </div>
       </div>
     </div>
   </div>
@@ -137,8 +134,8 @@
     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px;">
       <div data-reveal style="background:#fff; border:1px solid #E4E8EF; border-radius:16px; padding:30px; transition:transform .3s ease, box-shadow .3s ease;" style-hover="transform:translateY(-4px); box-shadow:0 14px 32px rgba(21,34,56,.08);">
         <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#F5A623; margin-bottom:16px; border-bottom:2px solid #F5A623; display:inline-block; padding-bottom:4px;">01</div>
-        <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:19px; margin-bottom:8px;"><span>Rewiring &amp; panels</span></div>
-        <div style="color:#4A5A72; font-size:15px; line-height:1.55;"><span>Full and partial rewires, consumer unit upgrades, fault-finding and repairs.</span></div>
+        <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:19px; margin-bottom:8px;"><span>Domestic electrical</span></div>
+        <div style="color:#4A5A72; font-size:15px; line-height:1.55;"><span>Sockets, lighting, rewires and consumer units for Worcester homes &mdash; tidy, safe and guaranteed.</span></div>
       </div>
       <div data-reveal style="background:#fff; border:1px solid #E4E8EF; border-radius:16px; padding:30px; transition:transform .3s ease, box-shadow .3s ease;" style-hover="transform:translateY(-4px); box-shadow:0 14px 32px rgba(21,34,56,.08);">
         <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#F5A623; margin-bottom:16px; border-bottom:2px solid #F5A623; display:inline-block; padding-bottom:4px;">02</div>
@@ -147,18 +144,18 @@
       </div>
       <div data-reveal style="background:#fff; border:1px solid #E4E8EF; border-radius:16px; padding:30px; transition:transform .3s ease, box-shadow .3s ease;" style-hover="transform:translateY(-4px); box-shadow:0 14px 32px rgba(21,34,56,.08);">
         <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#F5A623; margin-bottom:16px; border-bottom:2px solid #F5A623; display:inline-block; padding-bottom:4px;">03</div>
-        <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:19px; margin-bottom:8px;"><span>Lighting design &amp; install</span></div>
-        <div style="color:#4A5A72; font-size:15px; line-height:1.55;"><span>Indoor, outdoor and smart lighting — planned, wired and finished cleanly.</span></div>
+        <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:19px; margin-bottom:8px;"><span>Lighting &amp; smart home</span></div>
+        <div style="color:#4A5A72; font-size:15px; line-height:1.55;"><span>Indoor, outdoor and smart lighting &mdash; planned, wired and finished cleanly.</span></div>
       </div>
       <div data-reveal style="background:#fff; border:1px solid #E4E8EF; border-radius:16px; padding:30px; transition:transform .3s ease, box-shadow .3s ease;" style-hover="transform:translateY(-4px); box-shadow:0 14px 32px rgba(21,34,56,.08);">
         <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#F5A623; margin-bottom:16px; border-bottom:2px solid #F5A623; display:inline-block; padding-bottom:4px;">04</div>
-        <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:19px; margin-bottom:8px;"><span>Commercial fit-outs</span></div>
-        <div style="color:#4A5A72; font-size:15px; line-height:1.55;"><span>Offices, retail and light industrial installations, delivered on schedule.</span></div>
+        <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:19px; margin-bottom:8px;"><span>Commercial &amp; industrial</span></div>
+        <div style="color:#4A5A72; font-size:15px; line-height:1.55;"><span>Offices, retail and light-industrial installations, delivered on schedule.</span></div>
       </div>
       <div data-reveal style="background:#fff; border:1px solid #E4E8EF; border-radius:16px; padding:30px; transition:transform .3s ease, box-shadow .3s ease;" style-hover="transform:translateY(-4px); box-shadow:0 14px 32px rgba(21,34,56,.08);">
         <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; color:#F5A623; margin-bottom:16px; border-bottom:2px solid #F5A623; display:inline-block; padding-bottom:4px;">05</div>
         <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:19px; margin-bottom:8px;"><span>Testing &amp; certification</span></div>
-        <div style="color:#4A5A72; font-size:15px; line-height:1.55;"><span>Safety inspections, condition reports and landlord certificates.</span></div>
+        <div style="color:#4A5A72; font-size:15px; line-height:1.55;"><span>EICR inspections, condition reports and landlord safety certificates.</span></div>
       </div>
     </div>
   </div>
@@ -166,34 +163,34 @@
   <!-- ================= STATS BAND ================= -->
   <div data-screen-label="Stats" style="background:#1B4A8A; color:#fff;">
     <div data-reveal style="max-width:1240px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:32px; padding:64px 24px;">
-      <div style="text-align:center;">
-        <div data-count-to="12" data-suffix="+" style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(38px,5.5vw,52px); letter-spacing:-.02em;">12+</div>
-        <div style="font-size:15px; font-weight:600; color:#B9CCE6; margin-top:6px;">Years in business</div>
-      </div>
-      <div style="text-align:center;">
-        <div data-count-to="900" data-suffix="+" style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(38px,5.5vw,52px); letter-spacing:-.02em;">900+</div>
-        <div style="font-size:15px; font-weight:600; color:#B9CCE6; margin-top:6px;">Jobs completed</div>
-      </div>
-      <div style="text-align:center;">
-        <div data-count-to="95" data-suffix="%" style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(38px,5.5vw,52px); letter-spacing:-.02em;">95%</div>
-        <div style="font-size:15px; font-weight:600; color:#B9CCE6; margin-top:6px;">Repeat &amp; referral clients</div>
-      </div>
-      <div style="text-align:center;">
-        <div data-count-to="4" data-suffix="" style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(38px,5.5vw,52px); letter-spacing:-.02em;">4</div>
-        <div style="font-size:15px; font-weight:600; color:#B9CCE6; margin-top:6px;">Qualified electricians</div>
-      </div>
+        <div style="text-align:center;">
+    <div data-count-to="350" data-suffix="+" style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(38px,5.5vw,52px); letter-spacing:-.02em;">350+</div>
+    <div style="font-size:15px; font-weight:600; color:#B9CCE6; margin-top:6px;">Jobs completed</div>
+  </div>
+        <div style="text-align:center;">
+    <div data-count-to="98" data-suffix="%" style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(38px,5.5vw,52px); letter-spacing:-.02em;">98%</div>
+    <div style="font-size:15px; font-weight:600; color:#B9CCE6; margin-top:6px;">Repeat &amp; referral clients</div>
+  </div>
+        <div style="text-align:center;">
+    <div data-count-to="6" data-suffix="" style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(38px,5.5vw,52px); letter-spacing:-.02em;">6</div>
+    <div style="font-size:15px; font-weight:600; color:#B9CCE6; margin-top:6px;">Years serving Worcestershire</div>
+  </div>
+        <div style="text-align:center;">
+    <div data-count-to="5" data-suffix="" style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(38px,5.5vw,52px); letter-spacing:-.02em;">5</div>
+    <div style="font-size:15px; font-weight:600; color:#B9CCE6; margin-top:6px;">Qualified electricians</div>
+  </div>
     </div>
   </div>
 
   <!-- ================= ABOUT / WHY US ================= -->
   <div id="about" data-screen-label="About" style="max-width:1240px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:clamp(36px,5vw,64px); padding:clamp(64px,9vw,96px) 24px; align-items:center;">
     <div data-reveal data-reveal-dir="left" style="border-radius:20px;">
-      <image-slot id="about-image" shape="rounded" radius="20" placeholder="Your team photo goes here when the site goes live" style="width:100%; height:430px;"></image-slot>
+      <image-slot id="about-image" shape="rounded" radius="20" placeholder="Your team photo goes here when the site goes live"style="width:100%; height:430px;"></image-slot>
     </div>
     <div data-reveal data-reveal-dir="right">
       <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:#1B4A8A; margin-bottom:14px;">Why choose us</div>
-      <h2 style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(30px,4.5vw,40px); line-height:1.15; letter-spacing:-.02em; margin:0 0 18px;"><span>A local team you can rely on</span></h2>
-      <p style="font-size:17px; line-height:1.65; color:#4A5A72; margin:0 0 28px;"><span>Electricians Worcester is a family-run electrical contractor based in Worcester. We have built our reputation on tidy workmanship, honest pricing and turning up when we say we will.</span></p>
+      <h2 style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(30px,4.5vw,40px); line-height:1.15; letter-spacing:-.02em; margin:0 0 18px;"><span>Your Worcester electrical specialists</span></h2>
+      <p style="font-size:17px; line-height:1.65; color:#4A5A72; margin:0 0 28px;"><span>Electricians Worcester is a Worcester-based electrical contractor. We have built our reputation on tidy workmanship, honest pricing and turning up when we say we will.</span></p>
       <div style="display:flex; flex-direction:column; gap:18px;">
         <div style="display:flex; gap:14px; align-items:flex-start;">
           <div style="width:8px; height:8px; border-radius:50%; background:#F5A623; margin-top:7px; flex-shrink:0;"></div>
@@ -201,7 +198,7 @@
         </div>
         <div style="display:flex; gap:14px; align-items:flex-start;">
           <div style="width:8px; height:8px; border-radius:50%; background:#F5A623; margin-top:7px; flex-shrink:0;"></div>
-          <div><strong style="font-size:15.5px;">Fully qualified &amp; insured</strong><div style="font-size:14.5px; color:#4A5A72; margin-top:2px;">Every job notified and certified under Part P. NICEIC reg. <span>601234000</span>.</div></div>
+          <div><strong style="font-size:15.5px;">Fully qualified &amp; insured</strong><div style="font-size:14.5px; color:#4A5A72; margin-top:2px;">Every job notified and certified under Part P. NICEIC reg. <span>609831</span>.</div></div>
         </div>
         <div style="display:flex; gap:14px; align-items:flex-start;">
           <div style="width:8px; height:8px; border-radius:50%; background:#F5A623; margin-top:7px; flex-shrink:0;"></div>
@@ -221,21 +218,21 @@
       <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px;">
         <div data-reveal style="background:#F7F8FA; border:1px solid #E4E8EF; border-radius:16px; padding:28px;">
           <div style="font-family:'IBM Plex Mono',monospace; color:#F5A623; font-size:13px; font-weight:700; margin-bottom:14px;">5.0 / 5</div>
-          <p style="font-size:15.5px; line-height:1.65; color:#152238; margin:0 0 20px;">"Rewired our whole house in four days. Spotless, polite, and the quote didn’t move a penny."</p>
-          <div style="font-weight:700; font-size:14px;">Mark T.</div>
+          <p style="font-size:15.5px; line-height:1.65; color:#152238; margin:0 0 20px;">"They rewired our 1930s semi in three days &mdash; spotless, polite and the price never moved."</p>
+          <div style="font-weight:700; font-size:14px;">Sarah P.</div>
           <div style="font-size:13px; color:#8A97AB;">Worcester</div>
         </div>
         <div data-reveal style="background:#F7F8FA; border:1px solid #E4E8EF; border-radius:16px; padding:28px;">
           <div style="font-family:'IBM Plex Mono',monospace; color:#F5A623; font-size:13px; font-weight:700; margin-bottom:14px;">5.0 / 5</div>
-          <p style="font-size:15.5px; line-height:1.65; color:#152238; margin:0 0 20px;">"Called with a tripping board, an electrician was here the same morning. Calm, professional and fixed it fast."</p>
-          <div style="font-weight:700; font-size:14px;">Sarah P.</div>
+          <p style="font-size:15.5px; line-height:1.65; color:#152238; margin:0 0 20px;">"Fitted two EV chargers at our workshop and talked us through the grants. Proper professionals."</p>
+          <div style="font-weight:700; font-size:14px;">Mark T.</div>
           <div style="font-size:13px; color:#8A97AB;">Malvern</div>
         </div>
         <div data-reveal style="background:#F7F8FA; border:1px solid #E4E8EF; border-radius:16px; padding:28px;">
           <div style="font-family:'IBM Plex Mono',monospace; color:#F5A623; font-size:13px; font-weight:700; margin-bottom:14px;">5.0 / 5</div>
-          <p style="font-size:15.5px; line-height:1.65; color:#152238; margin:0 0 20px;">"Fitted our new kitchen lighting over a weekend so we weren’t disrupted. Neat work and a fair price."</p>
+          <p style="font-size:15.5px; line-height:1.65; color:#152238; margin:0 0 20px;">"Sorted a consumer-unit fault the same afternoon I called, with a clear fixed quote up front."</p>
           <div style="font-weight:700; font-size:14px;">James R.</div>
-          <div style="font-size:13px; color:#8A97AB;">Droitwich Spa</div>
+          <div style="font-size:13px; color:#8A97AB;">Droitwich</div>
         </div>
       </div>
     </div>
@@ -245,8 +242,8 @@
   <div id="areas" data-screen-label="Service area" style="max-width:1240px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:clamp(36px,5vw,64px); padding:clamp(64px,9vw,96px) 24px; align-items:center;">
     <div data-reveal data-reveal-dir="left">
       <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:#1B4A8A; margin-bottom:14px;">Coverage</div>
-      <h2 style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(30px,4.5vw,40px); line-height:1.15; letter-spacing:-.02em; margin:0 0 18px;">Serving <span>Worcester & Worcestershire</span> and surrounds</h2>
-      <p style="font-size:17px; line-height:1.65; color:#4A5A72; margin:0 0 28px;">Standard call-outs within <span>20 miles</span> of our base — no travel charge inside the core area.</p>
+      <h2 style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(30px,4.5vw,40px); line-height:1.15; letter-spacing:-.02em; margin:0 0 18px;">Serving <span>Worcester &amp; Worcestershire</span> and surrounds</h2>
+      <p style="font-size:17px; line-height:1.65; color:#4A5A72; margin:0 0 28px;">Standard call-outs within <span>25 miles</span> of our base — no travel charge inside the core area.</p>
       <div style="display:flex; flex-direction:column; gap:14px;">
         <div style="display:flex; gap:12px; align-items:center;">
           <span style="width:16px; height:16px; border-radius:50%; border:2px dashed #F5A623; flex-shrink:0;"></span>
@@ -282,28 +279,28 @@
           <div style="position:absolute; inset:0; border-radius:50%; background:#F5A623; animation:pinPing 2.6s ease-out .8s infinite;"></div>
           <div style="position:absolute; inset:0; border-radius:50%; background:#F5A623;"></div>
         </div>
-        <span style="background:#fff; border:1px solid #D5DCE7; border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700; white-space:nowrap;">Droitwich Spa</span>
+        <span style="background:#fff; border:1px solid #D5DCE7; border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700; white-space:nowrap;">Cheltenham</span>
       </div>
       <div style="position:absolute; left:76%; top:56%; display:flex; flex-direction:column; align-items:center; gap:6px;">
         <div style="position:relative; width:12px; height:12px;">
           <div style="position:absolute; inset:0; border-radius:50%; background:#F5A623; animation:pinPing 2.6s ease-out 1.2s infinite;"></div>
           <div style="position:absolute; inset:0; border-radius:50%; background:#F5A623;"></div>
         </div>
-        <span style="background:#fff; border:1px solid #D5DCE7; border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700; white-space:nowrap;">Evesham</span>
+        <span style="background:#fff; border:1px solid #D5DCE7; border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700; white-space:nowrap;">Droitwich</span>
       </div>
       <div style="position:absolute; left:16%; top:62%; display:flex; flex-direction:column; align-items:center; gap:6px;">
         <div style="position:relative; width:12px; height:12px;">
           <div style="position:absolute; inset:0; border-radius:50%; background:#F5A623; animation:pinPing 2.6s ease-out 1.6s infinite;"></div>
           <div style="position:absolute; inset:0; border-radius:50%; background:#F5A623;"></div>
         </div>
-        <span style="background:#fff; border:1px solid #D5DCE7; border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700; white-space:nowrap;">Pershore</span>
+        <span style="background:#fff; border:1px solid #D5DCE7; border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700; white-space:nowrap;">Bromsgrove</span>
       </div>
       <div style="position:absolute; left:48%; top:78%; display:flex; flex-direction:column; align-items:center; gap:6px;">
         <div style="position:relative; width:12px; height:12px;">
           <div style="position:absolute; inset:0; border-radius:50%; background:#F5A623; animation:pinPing 2.6s ease-out 2s infinite;"></div>
           <div style="position:absolute; inset:0; border-radius:50%; background:#F5A623;"></div>
         </div>
-        <span style="background:#fff; border:1px solid #D5DCE7; border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700; white-space:nowrap;">Bromsgrove</span>
+        <span style="background:#fff; border:1px solid #D5DCE7; border-radius:999px; padding:4px 12px; font-size:12px; font-weight:700; white-space:nowrap;">Worcester</span>
       </div>
     </div>
   </div>
@@ -318,11 +315,11 @@
       <div data-reveal style="display:flex; flex-direction:column; gap:12px;">
         <details style="background:#F7F8FA; border:1px solid #E4E8EF; border-radius:14px; padding:20px 24px;">
           <summary style="display:flex; justify-content:space-between; align-items:center; font-family:'Sora',sans-serif; font-weight:700; font-size:17px;">Do you charge for quotes?<span class="faq-chev" style="color:#1B4A8A; font-size:20px; font-weight:400;">+</span></summary>
-          <p class="faq-a" style="font-size:15.5px; line-height:1.6; color:#4A5A72; margin:14px 0 0;"><span>No — quotes and site visits are free within our service area, with no obligation.</span></p>
+          <p class="faq-a" style="font-size:15.5px; line-height:1.6; color:#4A5A72; margin:14px 0 0;"><span>No &mdash; quotes and site visits are free within our Worcester service area, with no obligation.</span></p>
         </details>
         <details style="background:#F7F8FA; border:1px solid #E4E8EF; border-radius:14px; padding:20px 24px;">
           <summary style="display:flex; justify-content:space-between; align-items:center; font-family:'Sora',sans-serif; font-weight:700; font-size:17px;">Are you registered and insured?<span class="faq-chev" style="color:#1B4A8A; font-size:20px; font-weight:400;">+</span></summary>
-          <p class="faq-a" style="font-size:15.5px; line-height:1.6; color:#4A5A72; margin:14px 0 0;"><span>Yes — NICEIC Approved Contractor (reg. 601234000), Part P certified, with £5m public liability insurance.</span></p>
+          <p class="faq-a" style="font-size:15.5px; line-height:1.6; color:#4A5A72; margin:14px 0 0;"><span>Yes — NICEIC Approved Contractor (reg. 609831), Part P certified, with £5m public liability insurance.</span></p>
         </details>
         <details style="background:#F7F8FA; border:1px solid #E4E8EF; border-radius:14px; padding:20px 24px;">
           <summary style="display:flex; justify-content:space-between; align-items:center; font-family:'Sora',sans-serif; font-weight:700; font-size:17px;">Is your work guaranteed?<span class="faq-chev" style="color:#1B4A8A; font-size:20px; font-weight:400;">+</span></summary>
@@ -338,19 +335,23 @@
       <div data-reveal>
         <div style="font-family:'IBM Plex Mono',monospace; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:#F5A623; margin-bottom:14px;">Get in touch</div>
         <h2 style="font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(32px,5vw,44px); line-height:1.12; letter-spacing:-.02em; margin:0 0 18px;">Tell us about the job — we'll quote it free</h2>
-        <p style="font-size:17px; line-height:1.65; color:#B9C4D6; margin:0 0 36px;">We reply within one working day. For emergencies, always call.</p>
+        <p style="font-size:17px; line-height:1.65; color:#B9C4D6; margin:0 0 36px;">We reply within one working day &mdash; call or email and we'll be in touch.</p>
         <div style="display:flex; flex-direction:column; gap:22px; font-size:16px;">
           <div style="display:flex; gap:16px; align-items:baseline;">
             <span style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#8A97AB; width:70px; flex-shrink:0;">Call</span>
-            <a href="tel:+447837137534" style="color:#F5A623; font-weight:800; font-size:20px; text-decoration:none;">07837 137534</a>
+            <a href="tel:07854652753" style="color:#F5A623; font-weight:800; font-size:20px; text-decoration:none;">07854 652753</a>
           </div>
           <div style="display:flex; gap:16px; align-items:baseline;">
             <span style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#8A97AB; width:70px; flex-shrink:0;">Email</span>
-            <a href="mailto:enquiries@dwelectrical.net" style="color:#fff; font-weight:600; text-decoration:none;">enquiries@dwelectrical.net</a>
+            <a href="mailto:info@nwesolutions.co.uk" style="color:#fff; font-weight:600; text-decoration:none;">info@nwesolutions.co.uk</a>
+          </div>
+          <div style="display:flex; gap:16px; align-items:baseline;">
+            <span style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#8A97AB; width:70px; flex-shrink:0;">Visit</span>
+            <span style="color:#fff; font-weight:600;">61 Victoria Ave, Worcester, Worcestershire WR5 1EE</span>
           </div>
           <div style="display:flex; gap:16px; align-items:baseline;">
             <span style="font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#8A97AB; width:70px; flex-shrink:0;">Hours</span>
-            <span style="color:#fff; font-weight:600;">Mon–Fri 8:00–17:00 · Sat 9:00–13:00</span>
+            <span style="color:#fff; font-weight:600;">Mon&ndash;Fri 8:30am&ndash;6pm &middot; Closed weekends</span>
           </div>
         </div>
       </div>
@@ -363,7 +364,7 @@
           <textarea placeholder="What do you need done?" rows="4" style="font-family:'Manrope',sans-serif; font-size:15px; padding:14px 16px; border:1.5px solid #D5DCE7; border-radius:10px; outline:none; width:100%; box-sizing:border-box; grid-column:1 / -1; resize:vertical;" style-focus="border-color:#1B4A8A;"></textarea>
         </div>
         <button onClick="{{ submitQuote }}" style="margin-top:18px; width:100%; background:#F5A623; color:#152238; font-family:'Manrope',sans-serif; font-weight:800; font-size:16px; padding:16px; border:none; border-radius:12px; cursor:pointer; transition:background .25s ease;" style-hover="background:#E79A15;">{{ submitLabel }}</button>
-        <div style="font-size:12.5px; color:#8A97AB; margin-top:12px; text-align:center;">No spam, no obligation. <span></span></div>
+        
       </div>
     </div>
   </div>
@@ -371,9 +372,8 @@
   <!-- ================= FOOTER ================= -->
   <div data-screen-label="Footer" style="background:#0E1829; color:#8A97AB;">
     <div style="max-width:1240px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px 24px; padding:28px 24px; font-size:13.5px;">
-      <span>© <span>2026</span> <span>Electricians Worcester Ltd</span> · Registered in England &amp; Wales, Company No. <span>11223344</span> · NICEIC reg. <span>601234000</span></span>
+      <span>© <span>2026</span> <span>NWE Solutions Ltd</span> · Registered in England &amp; Wales, Company No. <span>12114338</span> · NICEIC reg. <span>609831</span></span>
       <div style="display:flex; gap:24px;">
-        <a href="https://www.facebook.com/DWelectricalworcester/" style="color:#8A97AB; text-decoration:none;">Facebook</a> · <a href="https://twitter.com/dwelectrical1" style="color:#8A97AB; text-decoration:none;">Twitter</a> · <a href="https://www.instagram.com/dwelectrical2017" style="color:#8A97AB; text-decoration:none;">Instagram</a>
       </div>
     </div>
   </div>
@@ -383,7 +383,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{
   &quot;hidePlaceholderHighlights&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: false, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Template&quot; },
-  &quot;showEmergencyBar&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Layout&quot; },
+  &quot;showEmergencyBar&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: false, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Layout&quot; },
   &quot;scrollAnimations&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Layout&quot; }
 }">
 class Component extends DCLogic {
